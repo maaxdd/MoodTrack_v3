@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        tools:context=".fragments.NoteFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:background="@drawable/note_section_bg">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="@string/date"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    android:id="@+id/dateLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="@string/time"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    android:id="@+id/timeLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/timeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="@string/situation"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    app:errorEnabled="false"
+                    android:id="@+id/situationLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/situationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:id="@+id/levelBefore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/discomfort_before"
+                    android:textColor="@color/dark_blue"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/levelBeforeLayout">
+
+                <SeekBar
+                        android:id="@+id/seekBarBefore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:progressDrawable="@drawable/seekbar_track_blue"
+                        android:thumbTint="@color/dark_blue"
+                        android:splitTrack="false" />
+
+                <TextView
+                        android:id="@+id/percentsBefore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/dark_blue"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="@string/thoughts"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    android:id="@+id/thoughtsLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/thoughtsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/emotions"
+                    android:textColor="@color/dark_blue"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            <!-- Негативные эмоции -->
+            <TextView
+                    android:id="@+id/emotionsNegativeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Негативные эмоции"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/selectedEmotions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- Позитивные эмоции -->
+            <TextView
+                    android:id="@+id/emotionsPositiveTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Позитивные эмоции"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/positiveEmotionsGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addEmotionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/actions"
+                    app:backgroundTint="@color/green"
+                    app:elevation="0dp"
+                    app:fabCustomSize="48dp"
+                    app:srcCompat="@drawable/ic_plus"
+                    app:tint="@color/dark_blue" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/feelingsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="@string/feelings"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    app:boxCornerRadiusTopStart="24dp"
+                    app:boxCornerRadiusTopEnd="24dp"
+                    app:boxCornerRadiusBottomStart="24dp"
+                    app:boxCornerRadiusBottomEnd="24dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/feelingsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="8"
+                        android:gravity="top|start"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="@string/actions"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    android:id="@+id/actionsLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/actionsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/distortions"
+                    android:textColor="@color/dark_blue"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            <!-- Факторы как кнопки -->
+            <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+
+            <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+
+            <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <!-- Дополнительные варианты влияния -->
+            <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/influence_button_bg"
+                    android:button="@null"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:minHeight="40dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+
+            <TextView
+                    android:id="@+id/distortionsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="@string/answer"
+                    android:textColorHint="@color/dark_blue"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/dark_blue"
+                    app:placeholderTextColor="@color/dark_blue"
+                    android:id="@+id/answerLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/answerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_blue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:id="@+id/levelAfter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/discomfort_after"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/levelAfterLayout">
+
+                <SeekBar
+                        android:id="@+id/seekBarAfter"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:progressTint="@color/green"
+                        android:thumbTint="@color/green" />
+
+                <TextView
+                        android:id="@+id/percentsAfter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_blue"
+                        android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night overrides for proper contrast -->
+    <color name="black">#FF000000</color>
+    <color name="white">#1A1E24</color>
+    <color name="green">#6EE7B7</color>
+    <color name="dark_blue">#E9EEF5</color>
+    <color name="gray">#AAB2BD</color>
+    <color name="light_gray">#2A313A</color>
+
+    <array name="donut_colors">
+        <item>#6EE7B7</item>
+        <item>#61cff4</item>
+        <item>#a5a8fd</item>
+        <item>#ce87fd</item>
+        <item>#ff56d4</item>
+        <item>#ff6d56</item>
+        <item>#ffb053</item>
+        <item>#feef57</item>
+        <item>#92f054</item>
+    </array>
+</resources>

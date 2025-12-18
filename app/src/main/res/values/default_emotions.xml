@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_emotions">
+        <!-- Положительные -->
+        <item>Радость</item>
+        <item>Восторг</item>
+        <item>Гордость</item>
+        <item>Восхищение</item>
+        <item>Умиротворение</item>
+        <item>Воодушевление</item>
+        <item>Спокойствие</item>
+        <item>Интерес</item>
+        <item>Любовь</item>
+
+        <!-- Нейтральные / мягкие -->
+        <item>Удивление</item>
+        <item>Любопытство</item>
+
+        <!-- Негативные -->
+        <item>Гнев</item>
+        <item>Раздражение</item>
+        <item>Отвращение</item>
+        <item>Презрение</item>
+        <item>Обида</item>
+        <item>Досада</item>
+        <item>Зависть</item>
+        <item>Ревность</item>
+        <item>Грусть</item>
+        <item>Разочарование</item>
+        <item>Тоска</item>
+        <item>Отчаяние</item>
+        <item>Сожаление</item>
+        <item>Страх</item>
+        <item>Тревога</item>
+        <item>Ужас</item>
+        <item>Паника</item>
+        <item>Стыд</item>
+        <item>Вина</item>
+    </string-array>
+</resources>

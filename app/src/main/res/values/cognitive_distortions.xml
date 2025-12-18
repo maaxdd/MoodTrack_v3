@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cognitive_distortions_names">
+        <item>Персонализация</item>
+        <item>Сверхобобщение</item>
+        <item>Черно-белое мышление</item>
+        <item>Чтение чужих мыслей</item>
+        <item>Катастрофизация</item>
+        <item>Преувеличение или преуменьшение</item>
+        <item>Эмоциональное обоснование</item>
+        <item>Долженствование</item>
+        <item>Обесценивание положительного</item>
+    </string-array>
+
+</resources>

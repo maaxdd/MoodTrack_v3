@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#6EE7B7</color>
+    <color name="dark_blue">#1B232E</color>
+    <color name="gray">#7C8086</color>
+    <color name="light_gray">#ECECEC</color>
+    <color name="primary_blue">#0A84FF</color>
+
+    <array name="donut_colors">
+        <item>#6EE7B7</item>
+        <item>#61cff4</item>
+        <item>#a5a8fd</item>
+        <item>#ce87fd</item>
+        <item>#ff56d4</item>
+        <item>#ff6d56</item>
+        <item>#ffb053</item>
+        <item>#feef57</item>
+        <item>#92f054</item>
+    </array>
+</resources>

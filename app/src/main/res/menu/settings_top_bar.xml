@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/close_settings_item"
+        android:contentDescription=""
+        android:icon="@drawable/ic_close"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

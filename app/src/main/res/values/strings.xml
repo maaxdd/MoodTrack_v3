@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">MoodTrack</string>
+
+    <string name="archive">Архив</string>
+    <string name="statistics">Статистика</string>
+    <string name="settings">Настройки</string>
+    <string name="search">Поиск</string>
+    <string name="new_note">Новая запись</string>
+    <string name="edit_note">Изменение записи</string>
+
+    <string name="edit">Изменить</string>
+    <string name="delete">Удалить</string>
+    <string name="help">Помощь</string>
+
+    <string name="theme">ТЕМА</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="structure">СТРУКТУРА ЗАПИСИ</string>
+    <string name="discomfort_level">Уровень дискомфорта</string>
+    <string name="emotion_list">Редактировать список эмоций</string>
+    <string name="feelings">Ощущения</string>
+    <string name="actions">Предпринятые действия</string>
+    <string name="answer">Рациональный ответ</string>
+    <string name="pin_code">PIN-КОД</string>
+    <string name="create_pin_code">Установить PIN-код</string>
+    <string name="change_pin_code">Изменить PIN-код</string>
+    <string name="export">ЭКСПОРТ</string>
+    <string name="export_notes">Экспортировать записи</string>
+    <string name="emotions_list">Список эмоций</string>
+
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="situation">Ситуация</string>
+    <string name="discomfort_before">Уровень дискомфорта до записи:</string>
+    <string name="thoughts">Мысли</string>
+    <string name="emotions">Эмоции:</string>
+    <string name="distortions">больше всего повлияло:</string>
+    <string name="discomfort_after">Уровень дискомфорта после записи:</string>
+    <string name="add">Добавить</string>
+
+    <string name="add_emotion">Добавить эмоцию</string>
+    <string name="delete_emotion">Удалить эмоцию</string>
+    <string name="emotion_hint">Новая эмоция</string>
+    <string name="save_emotion">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">OK</string>
+
+    <string name="all_fields_must_be_filled">Все поля должны быть заполнены</string>
+    <string name="delete_dialog_title">Вы действительно хотите удалить запись?</string>
+    <string name="back_dialog_title">Все введенные данные будут потеряны</string>
+
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="save">Сохранить</string>
+
+    <!-- Мастер новой записи -->
+    <string name="wizard_step1_title">Опишите ваши ощущения</string>
+    <string name="wizard_emotions_title">Выберите эмоции</string>
+    <string name="wizard_influence_title">Что больше всего повлияло на состояние?</string>
+    <string name="wizard_reflection_title">Рефлексия</string>
+    <string name="wizard_continue">Продолжить</string>
+    <string name="wizard_finish">Записать</string>
+    <string name="dear_diary_placeholder">Дорогой дневник...</string>
+
+    <string name="mode_day">Ощущения за весь день</string>
+    <string name="mode_moment">Сиюминутные ощущения</string>
+    <string name="question_day">Как бы Вы описали свои ощущения сегодня в целом?</string>
+    <string name="question_moment">Как Вы чувствовали себя в этот момент?</string>
+    <string name="reflection">Рефлексия</string>
+    <string name="influence_question">Что оказывает наибольшее влияние?</string>
+    <string name="remove_pin_code">Убрать PIN-код</string>
+    <string name="pin_removed">PIN-код удалён</string>
+
+    <!-- Профиль / никнейм -->
+    <string name="profile">ПРОФИЛЬ</string>
+    <string name="default_nickname">Гость</string>
+    <string name="nickname_title">Никнейм</string>
+
+    <string name="top_emotions">Самые частые эмоции:</string>
+    <string name="start_period">Начало периода</string>
+    <string name="end_period">Конец периода</string>
+    <string name="incorrect_period">Некорректный период</string>
+    <string name="export_button">Экспортировать</string>
+    <string name="format">Формат экспортируемого файла:</string>
+    <string name="csv">CSV</string>
+    <string name="pdf">PDF</string>
+    <string name="export_text">Выберите период, записи за который вы хотите экспортировать.
+        По умолчанию экспортируются все записи.</string>
+
+    <string name="enter_pin">Введите PIN-код</string>
+    <string name="create_pin">Придумайте PIN-код</string>
+    <string name="repeat_pin">Введите PIN-код ещë раз</string>
+    <string name="incorrect_pin">Неверный PIN-код</string>
+
+    <string name="help_text">
+        <b>ДАТА И ВРЕМЯ</b>\n
+        Отметьте дату и время, в которые произошла ситуация\n\n
+
+        <b>СИТУАЦИЯ</b>\n
+        Кратко опишите событие, которое вызвало у вас сильные эмоции. Постарайтесь быть объективны,
+        сфокусируйтесь на фактах. (Например, <i>\u0022Я попал в пробку и опоздал на важную встречу\u0022</i>)\n\n
+
+        <b>УРОВЕНЬ ДИСКОМФОРТА ДО ЗАПИСИ</b>\n
+        Оцените, насколько дискомфортно вы себя чувствуете, от 0% до 100%.\n\n
+
+        <b>МЫСЛИ</b>\n
+        Запишите иррациональные, тревожные или огорчающие вас мысли, которые были вызваны произошедшей ситуацией.
+        (Например, <i>\u0022Я неудачник, весь мир против меня, я всех подвел, они разочаруются во мне\u0022</i>)\n\n
+
+        <b>ЭМОЦИИ</b>\n
+        Нажмите на кнопку добавления эмоций и выберете те, которые испытали/испытываете в связи с произошедшей ситуацией.
+        Если подходящей эмоции нет в списке, вы можете добавить ее самостоятельно.
+        Редактирование списка эмоций доступно в настройках приложения. (Например, грусть, разочарование, злость, стыд)\n\n
+
+        <b>ОЩУЩЕНИЯ</b>\n
+        Опишите, как ваше тело отреагировало на данную ситуацию.
+        (Например, дрожь в руках, учащенное сердцебиение, головокружение)\n\n
+
+        <b>ПРЕДПРИНЯТЫЕ ДЕЙСТВИЯ</b>\n
+        Запишите, что вы сделали из-за случившейся ситуации.
+        (Например, накричали на кого-то, причинили себе вред, отменили свои планы)\n\n
+
+        <b>КОГНИТИВНЫЕ ИСКАЖЕНИЯ</b>\n
+        Ознакомьтесь с описанием искажений и отметьте те, с которыми вы столкнулись в данной ситуации.\n
+        <b>Персонализация</b> — представление человека о том, что все события, особенно негативные, происходят по его вине, стремление объяснять внешние события особенностями своей личности.
+        (<i>Если кто-то расстроен, это точно из-за меня</i>)\n
+        <b>Сверхобобщение</b> — тенденция делать глубокие умозаключения, основанные на единственном событии, факте. (<i>Меня никто не понимает</i>)\n
+        <b>Черно-белое мышление</b> — стремление видеть вещи и события в абсолютно положительном или отрицательном свете. (<i>Если я не справлюсь, значит, я неудачник</i>)\n
+        <b>Чтение чужих мыслей</b> — вера человека в то, что он знает, что думают другие люди. (<i>Я им не понравлюсь</i>)\n
+        <b>Катастрофизация</b> — резкое преувеличение негативного характера явления или ситуации. (<i>Если меня отчислят, моя жизнь будет кончена</i>)\n
+        <b>Преувеличение или преуменьшение</b> — необоснованное преувеличение отрицательного и/или преуменьшение положительного опыта. (<i>Это не моя заслуга, мне просто повезло</i>)\n
+        <b>Эмоциональное обоснование</b> — убеждение в правильности чего-либо, исходя из наличия сильной уверенности в этом. (<i>Я чувствую, что у меня ничего не получится, значит, так и будет</i>)\n
+        <b>Долженствование</b> — необоснованно завышенные требования к себе, другим людям и миру в целом без учета альтернативы. (<i>Мне нельзя показывать свою слабость</i>)\n
+        <b>Обесценивание положительного</b> — игнорирование позитивного опыта, интерпретация его как негативного. (<i>Он похвалил мою последнюю работу, значит, все предыдущие были плохими</i>)\n\n
+
+        <b>РАЦИОНАЛЬНЫЙ ОТВЕТ</b>\n
+        Перечитайте запись и проанализируйте свои мысли, опираясь на выбранные когнитивные искажения.
+        Пострайтесь дать на каждую из своих мыслей рациональный и альтернативный ответ.
+        (Например, <i>\u0022Все иногда попадают в пробки и опаздывают, ничего страшного не произойдет, если я предупрежу, что задержусь\u0022</i>)\n\n
+
+        <b>УРОВЕНЬ ДИСКОМФОРТА ПОСЛЕ ЗАПИСИ</b>\n
+        Посмотрите на свою предыдущую оценку и сравните с ней свое состояние сейчас. Оцените его так же от 0% до 100%.\n\n
+
+        Возможно, вам не захочется заполнять некоторые пункты, поэтому вы можете изменить структуру записи в настройках приложения.
+    </string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="influence_categories">
+        <item>Здоровье</item>
+        <item>Фитнес</item>
+        <item>Забота о себе</item>
+        <item>Хобби и увлечения</item>
+        <item>Личность и самоопределение</item>
+        <item>Духовная жизнь</item>
+        <item>Сообщество</item>
+        <item>Семья</item>
+        <item>Друзья</item>
+        <item>Партнер</item>
+        <item>Свидания и личная жизнь</item>
+        <item>Задачи</item>
+        <item>Работа</item>
+        <item>Образование</item>
+        <item>Путешествия</item>
+        <item>Погода</item>
+        <item>Текущие события</item>
+        <item>Деньги</item>
+    </string-array>
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".fragments.SettingsFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/listDivider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+            <!-- Профиль / никнейм -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+                <TextView
+                        android:id="@+id/profileTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/nicknameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/default_nickname"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        android:background="?android:attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/themeGroup"
+                    android:visibility="visible">
+
+                <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/theme"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                <RadioButton
+                        android:id="@+id/systemTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:minHeight="48dp"
+                        android:text="@string/theme_system"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme" />
+
+                <RadioButton
+                        android:id="@+id/lightTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/theme_light"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme" />
+
+                <RadioButton
+                        android:id="@+id/darkTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/theme_dark"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/structure"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                <CheckBox
+                        android:id="@+id/levelBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="false"
+                        android:drawableStart="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:minHeight="48dp"
+                        android:text="@string/discomfort_level"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme" />
+
+                <CheckBox
+                        android:id="@+id/feelingsBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="false"
+                        android:drawableStart="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:minHeight="48dp"
+                        android:text="@string/reflection"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme" />
+
+                <CheckBox
+                        android:id="@+id/actionsBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="false"
+                        android:drawableStart="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:minHeight="48dp"
+                        android:text="@string/actions"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme" />
+
+                <CheckBox
+                        android:id="@+id/answerBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="false"
+                        android:drawableStart="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:minHeight="48dp"
+                        android:text="@string/answer"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:theme="@style/CheckBox.Theme"
+                        android:visibility="gone" />
+
+                <TextView
+                        android:id="@+id/editEmotionsButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:contextClickable="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/emotion_list"
+                        android:textColor="@color/dark_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pin_code"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/createPINButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/create_pin_code"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground" />
+
+                <TextView
+                        android:id="@+id/changePINButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/change_pin_code"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:background="?android:attr/selectableItemBackground" />
+
+                <TextView
+                        android:id="@+id/removePINButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/remove_pin_code"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:background="?android:attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/export"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/exportButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/export_notes"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

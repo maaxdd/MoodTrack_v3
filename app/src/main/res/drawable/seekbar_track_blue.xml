@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Фон дорожки -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="4dp" />
+            <corners android:radius="999dp" />
+            <solid android:color="@color/light_gray" />
+        </shape>
+    </item>
+
+    <!-- Заполненная часть -->
+    <item android:id="@android:id/progress">
+        <shape android:shape="rectangle">
+            <size android:height="6dp" />
+            <corners android:radius="999dp" />
+            <solid android:color="@color/dark_blue" />
+        </shape>
+    </item>
+
+</layer-list>
